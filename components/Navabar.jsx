@@ -87,7 +87,7 @@ const Navbar =() =>{
                             </div>
                         </div>
                         <div className=' border-b border-gray-800 my-4'>
-                            <p className=' w-[85%] md:w-[90%] py-4'>Let's bulid something legendary together</p>
+                            <p className=' w-[85%] md:w-[90%] py-4'>Let&#39;s bulid something legendary together</p>
                         </div>
                     </div>
                     <div className=' py-4 flex flex-col'>
@@ -109,7 +109,7 @@ const Navbar =() =>{
                             </Link>
                         </ul>
                         <div className=' pt-10'>
-                            <p className='uppercase tracking-widest text-[#50a4d1] '>Let's Connect</p>
+                            <p className='uppercase tracking-widest text-[#50a4d1] '>Let&#39;s Connect</p>
                             <div className=' flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                 <div className=' rounded-full shadow-lg shadow-gray-900 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                 <FaLinkedinIn/>
