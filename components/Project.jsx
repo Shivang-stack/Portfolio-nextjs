@@ -20,27 +20,27 @@ const Projects = () => {
           <ProjectItem
             title='E-commerce website'
             backgroundImg={animekartImg}
-            projectUrl='/animekart'
+            projectUrl='https://github.com/Shivang-stack/Mini-project-Animekart'
           />
           <ProjectItem
             title='Chat App'
             backgroundImg={chatappImg}
-            projectUrl='/chatapp'
+            projectUrl='https://github.com/Shivang-stack/charlando-web'
           />
           <ProjectItem
             title='News Website'
             backgroundImg={newsappImg}
-            projectUrl='/newswebsite'
+            projectUrl='https://github.com/Shivang-stack/NewsForYou-web'
           />
           <ProjectItem
             title='Video Chat'
             backgroundImg={videochatImg}
-            projectUrl='/videochat'
+            projectUrl='https://github.com/Shivang-stack/WebrtcApp'
           />
           <ProjectItem
             title='Weather App'
             backgroundImg={weatherAppImg}
-            projectUrl='/weatherapp'
+            projectUrl='https://github.com/Shivang-stack/weatherapp'
           />
         </div>
       </div>

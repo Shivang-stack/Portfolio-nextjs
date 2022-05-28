@@ -2,6 +2,8 @@ import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import Link from 'next/link';
+
 
 const Main = () => {
   return (
@@ -22,18 +24,29 @@ const Main = () => {
             learning New technologies.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                <div className='rounded-full shadow-lg shadow-gray-900 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <FaLinkedinIn />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-900 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <FaGithub />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-900 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <AiOutlineMail />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-900 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <BsFillPersonLinesFill />
-                </div>
+          <div className=' rounded-full shadow-lg shadow-gray-900 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                <Link href='https://www.linkedin.com/in/shivangyadav16/'>
+                                <FaLinkedinIn/>
+                                </Link>
+                                
+                                </div>
+                                <div className=' rounded-full shadow-lg shadow-gray-900 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                <Link href='https://github.com/Shivang-stack'>
+                                <FaGithub/>
+                                </Link>
+                                
+                                </div>
+                                <div className=' rounded-full shadow-lg shadow-gray-900 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                <Link href='https://mail.google.com/mail/u/shivang1691401@gmail.com'>
+                                <AiOutlineMail/>
+                                </Link>
+                                
+                                </div>
+                                <div className=' rounded-full shadow-lg shadow-gray-900 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                <Link href='https://drive.google.com/file/d/1eAITCDdjJdnqHTgvhHo5pUToabFsdUqD/view?usp=sharing'>
+                                <BsFillPersonLinesFill/>
+                                </Link>
+                                </div>
           </div>
         </div>
       </div>

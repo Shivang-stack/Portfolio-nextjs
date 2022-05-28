@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import Link from "next/link"
 
 const About = () => {
   return (
@@ -21,7 +22,10 @@ const About = () => {
             now spending my time building projects with React JS, MongoDB, Firebase, Postgres ,and
             learning new technologies.
           </p>
+          <Link href='https://github.com/Shivang-stack?tab=repositories'>
           <p className='py-2 text-gray-300 underline cursor-pointer'>Check out some of my latest projects.</p>
+          </Link>
+          
         </div>
         <div className='w-full h-auto m-auto shadow-xl shadow-gray-800 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
             <img className='rounded-xl' src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80" alt="/" />
