@@ -27,8 +27,8 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className='py-2'>Name here</h2>
-                <p>Front-End Developer</p>
+                <h2 className='py-2'>Shivang yadav</h2>
+                <p>Full-Stack Developer</p>
                 <p className='py-4'>
                   I am available for freelance or full-time positions. Contact
                   me and let&#39;s talk.
