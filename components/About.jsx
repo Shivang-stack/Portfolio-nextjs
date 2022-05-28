@@ -13,7 +13,7 @@ const About = () => {
           <p className='py-2 text-gray-300'>
           I started my programming journey in 9th standard with Java, 
           developed some small project for school compitions. As the President of Computer Club of my school i organized some Coding compitions as well as 
-          quiz compition where we use the quiz app devloped by me.
+          quiz competition where we use the quiz app devloped by me.
           </p>
           <p className='py-2 text-gray-300'>
             Fascinated with how intricate programming can be I was quickly drawn
