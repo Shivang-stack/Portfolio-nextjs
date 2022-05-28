@@ -11,7 +11,7 @@ const About = () => {
           <h2 className='py-4'>Who I Am</h2>
           <p className='py-2 text-gray-300'> I am not your normal developer</p>
           <p className='py-2 text-gray-300'>
-          I started my programming journey in 9th standard with java, 
+          I started my programming journey in 9th standard with Java, 
           developed some small project for school compitions. As the President of Computer Club of my school i organized some Coding compitions as well as 
           quiz compition where we use the quiz app devloped by me.
           </p>
