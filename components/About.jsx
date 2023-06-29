@@ -24,8 +24,8 @@ const About = () => {
             </button>
           </a>
         </div>
-        <div className='w-full h-auto m-auto shadow-xl shadow-gray-800 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-          <Image className='rounded-xl' src={Profile} alt='/' /> 
+        <div className='w-full h-auto m-auto shadow-xl shadow-gray-800 rounded-xl flex items-center justify-center  hover:scale-105 ease-in duration-300'>
+          <Image className='rounded-lg' src={Profile} alt='/' /> 
         </div>
       </div>
     </div>
