@@ -12,8 +12,8 @@ const Navbar =() =>{
     const [nav, setNav] =useState(false)
     
     const [shadow, setShadow] = useState(false);
-    const [navBg, setNavBg] = useState('#50a4d1');
-    const [linkColor, setLinkColor] = useState('#50a4d1');
+    const [navBg, setNavBg] = useState('#e3d9f1');
+    const [linkColor, setLinkColor] = useState('#cfbaec');
     const router = useRouter();
 
     useEffect(() => {
@@ -25,10 +25,10 @@ const Navbar =() =>{
           router.asPath === '/weatherapp'
         ) {
           setNavBg('transparent');
-          setLinkColor('#1f2937');
+          setLinkColor('#cfbaec');
         } else {
           setNavBg('#ecf0f3');
-          setLinkColor('#50a4d1');
+          setLinkColor('#cfbaec');
         }
       }, [router]);
     
@@ -78,7 +78,7 @@ const Navbar =() =>{
             </div>
             <div className={nav ? ' md:hidden fixed left-0 top-0 w-full h-screen bg-black/70':''}>
                 <div className={nav
-                    ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[75%] h-screen bg-[#1f2937] p-10 ease-in duration-500'
+                    ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[75%] h-screen bg-[#3a0979] p-10 ease-in duration-500'
                     : ' fixed left-[-100%] top-0 p-10 ease-in duration-500'
                     }>
                     <div>
@@ -111,7 +111,7 @@ const Navbar =() =>{
                             </Link>
                         </ul>
                         <div className=' pt-10'>
-                            <p className='uppercase tracking-widest text-[#50a4d1] '>Let&#39;s Connect</p>
+                            <p className='uppercase tracking-widest text-[#cfbaec] '>Let&#39;s Connect</p>
                             <div className=' flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                 <div className=' rounded-full shadow-lg shadow-gray-900 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                 <Link href='https://www.linkedin.com/in/shivangyadav16/'>

@@ -6,6 +6,7 @@ import About from '../components/About'
 import Skills from '../components/Skills'
 import Projects from '../components/Project'
 import Contact from '../components/Contact'
+import MyProfilePage from '../components/Experience'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Navbar/>
       <Main/>
       <About/>
+      <MyProfilePage/>
       <Skills/>
       <Projects/>
       <Contact/>

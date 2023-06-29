@@ -18,7 +18,7 @@ const Skills = () => {
   return (
     <div id='skills' className='w-full lg:h-screen p-2'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-        <p className='text-xl tracking-widest uppercase text-[#54cfdf]'>
+        <p className='text-xl tracking-widest uppercase text-[#cfbaec]'>
           Skills
         </p>
         <h2 className='py-4'>What I Can Do</h2>
@@ -103,14 +103,14 @@ const Skills = () => {
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image
-                  src={firebaselogo}
+                  src={mongologo}
                   width='64px'
                   height='64px'
                   alt='/'
                 />
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <h3>Firebase</h3>
+                <h3>Mongo DB</h3>
               </div>
             </div>
           </div>
@@ -133,14 +133,14 @@ const Skills = () => {
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
                 <Image
-                  src={shopifylogo}
+                  src={nodelogo}
                   width='64px'
                   height='64px'
                   alt='/'
                 />
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <h3>Shopify</h3>
+                <h3>Node js</h3>
               </div>
             </div>
           </div>
