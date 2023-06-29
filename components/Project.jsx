@@ -6,6 +6,8 @@ import chatappImg from '../public/assets/projects/charlando-web.png'
 import newsappImg from '../public/assets/projects/NewsForYou.png'
 import videochatImg from '../public/assets/projects/videochat.png'
 import weatherAppImg from '../public/assets/projects/weatherapp.png'
+import bbsrs from '../public/assets/projects/BBSRS.png'
+
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -41,6 +43,11 @@ const Projects = () => {
             title='Weather App'
             backgroundImg={weatherAppImg}
             projectUrl='https://github.com/Shivang-stack/weatherapp'
+          />
+          <ProjectItem
+            title='Blockchain based Student Reward System'
+            backgroundImg={bbsrs}
+            projectUrl='https://github.com/Shivang-stack/Blockchain-based-student-reward-system.git'
           />
         </div>
       </div>

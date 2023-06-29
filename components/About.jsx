@@ -10,7 +10,7 @@ const About = () => {
     <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
-          <p className='uppercase text-xl tracking-widest text-[#3a0979]'>About</p>
+          <p className='uppercase text-xl tracking-widest text-[#cfbaec]'>About</p>
           <h2 className='py-4'>Who I Am</h2>
           <p className='py-2 text-gray-300'>
             Highly motivated Computer Science professional with a strong programming background and a Bachelor&#39;s degree in Engineering from AMC Engineering College. Skilled in JavaScript, Java, C, Python, C++, and Dart, with experience in React, Node.js, Flutter, and databases such as Postgres and MongoDB. Currently a SaaS Intern at Movella, automating NSRs and handling Testing, Data Analysis & video integration operations. Previous experience includes Backend Development and technical roles at Pysphere and YesMentor. Strong leadership skills demonstrated as WebMaster of the IEEE Student Branch and Technical Head of ACSESS - CSE Student Forum. Seeking challenging opportunities to drive innovation and growth.
