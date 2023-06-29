@@ -19,7 +19,7 @@ const About = () => {
             <p className='py-2 text-gray-300 underline cursor-pointer'>Check out some of my latest projects.</p>
           </Link>
           <a href={Resume} download>
-            <button className='py-2 px-4 mt-4 text-white bg-blue-500 hover:bg-blue-600 rounded-md'>
+            <button className='py-2 px-4 mt-4 text-white  rounded-md'>
               Download Resume
             </button>
           </a>
