@@ -5,10 +5,10 @@ import Image from 'next/image'
 const ExperienceComponent = ({ companyLogo, position, description }) => {
   return (
     <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-      <div className="grid items-center ">
+      <div className="items-center ">
         <div className="">
           <Image
-            className='rounded-full ring-[#50d71e]'
+            className='rounded-full shadow-xl p-3 hover:scale-105 ease-in duration-300 '
             src={companyLogo}
             width='100px'
             height='100px'

@@ -7,6 +7,7 @@ import Resume from '../public/assets/resume.pdf';
 
 const About = () => {
   return (
+    <section>
     <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
@@ -29,6 +30,14 @@ const About = () => {
         </div>
       </div>
     </div>
+    <div
+    className="absolute inset-0 max-w-md mx-auto h-72 blur-[118px]"
+    style={{
+      background:
+        "linear-gradient(152.92deg, rgba(192, 132, 252, 0.2) 4.54%, rgba(232, 121, 249, 0.26) 34.2%, rgba(192, 132, 252, 0.1) 77.55%)",
+    }}
+  ></div>
+  </section>
   );
 };
 
