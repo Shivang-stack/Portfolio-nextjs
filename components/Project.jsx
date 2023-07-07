@@ -22,32 +22,38 @@ const Projects = () => {
           <ProjectItem
             title='E-commerce website'
             backgroundImg={animekartImg}
-            projectUrl='https://github.com/Shivang-stack/Mini-project-Animekart'
+            projectUrl='/animekart'
+            tech = 'MERN'
           />
           <ProjectItem
             title='Chat App'
             backgroundImg={chatappImg}
-            projectUrl='https://github.com/Shivang-stack/charlando-web'
+            projectUrl='/chatapp'
+            tech = 'React Js'
           />
           <ProjectItem
             title='News Website'
             backgroundImg={newsappImg}
-            projectUrl='https://github.com/Shivang-stack/NewsForYou-web'
+            projectUrl='/newssite'
+            tech = 'React Js'
           />
           <ProjectItem
             title='Video Chat'
             backgroundImg={videochatImg}
-            projectUrl='https://github.com/Shivang-stack/WebrtcApp'
+            projectUrl='/videochat'
+            tech = 'Vue Js'
           />
           <ProjectItem
             title='Weather App'
             backgroundImg={weatherAppImg}
-            projectUrl='https://github.com/Shivang-stack/weatherapp'
+            projectUrl='/weatherapp'
+            tech = 'Flutter'
           />
           <ProjectItem
             title='Blockchain based Student Reward System'
             backgroundImg={bbsrs}
-            projectUrl='https://github.com/Shivang-stack/Blockchain-based-student-reward-system.git'
+            projectUrl='/bbsrs'
+            tech = 'MERN'
           />
         </div>
       </div>
