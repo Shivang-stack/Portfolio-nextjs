@@ -24,7 +24,7 @@ const MyProfilePage = () => {
   ];
 
   return (
-    <div id='projects' className='w-full'>
+    <div id='myprofilepage' className='w-full'>
         <div className='max-w-[1240px] mx-auto px-2 py-16'>
             <p className='text-xl tracking-widest uppercase text-[#cfbaec]'>Professional Journey</p>
             <h2 className='py-4'>My Experience</h2>
