@@ -7,6 +7,7 @@ import Skills from '../components/Skills'
 import Projects from '../components/Project'
 import Contact from '../components/Contact'
 import MyProfilePage from '../components/Experience'
+import CertificateGrid from '../components/CertificateGrid'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Main/>
       <About/>
       <MyProfilePage/>
+      <CertificateGrid/>
       <Skills/>
       <Projects/>
       <Contact/>
