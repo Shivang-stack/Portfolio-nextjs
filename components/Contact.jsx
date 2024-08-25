@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import Image from "next/image";
 
 import { AiOutlineMail } from 'react-icons/ai';
@@ -8,6 +8,50 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbzucUGg9xK1lTG9AWh0kRglTbBVmn1oFogYScEv-aaKcVBMMK_m0uO2QB2xGH2Rq4W0bQ/exec', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      const result = await response.json();
+      console.log(result);
+      alert('Message sent successfully!');
+      setFormData({
+        name: '',
+        phone: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error(error);
+      alert('Failed to send message. Please try again.');
+    }
+  };
+  
+
   return (
     <div id='contact' className='w-full lg:h-screen'>
       <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
@@ -68,54 +112,70 @@ const Contact = () => {
           {/* right */}
           <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-800 rounded-xl lg:p-4'>
             <div className='p-4'>
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                   <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>Name</label>
                     <input
-                      className='border-2 rounded-lg p-3 flex '
+                      className='border-2 rounded-lg p-3 flex bg-white text-black'
                       type='text'
+                      name='name'
+                      value={formData.name}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>
-                      Phone Number
-                    </label>
+                    <label className='uppercase text-sm py-2'>Phone Number</label>
                     <input
-                      className='border-2 rounded-lg p-3 flex '
+                      className='border-2 rounded-lg p-3 flex bg-white text-black'
                       type='text'
+                      name='phone'
+                      value={formData.phone}
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>Email</label>
                   <input
-                    className='border-2 rounded-lg p-3 flex '
+                    className='border-2 rounded-lg p-3 flex bg-white text-black'
                     type='email'
+                    name='email'
+                    value={formData.email}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>Subject</label>
                   <input
-                    className='border-2 rounded-lg p-3 flex '
+                    className='border-2 rounded-lg p-3 flex bg-white text-black'
                     type='text'
+                    name='subject'
+                    value={formData.subject}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>Message</label>
-                  <textarea className='border-2 rounded-lg p-3 ' rows='10'></textarea>
+                  <textarea
+                    className='border-2 rounded-lg p-3 bg-white text-black'
+                    rows='10'
+                    name='message'
+                    value={formData.message}
+                    onChange={handleChange}
+                  ></textarea>
                 </div>
-                <button className='w-full p-4 shadow-xl text-gray-100 mt-4'>Send Message</button>
+                <button className='w-full p-4 shadow-xl text-gray-100 mt-4'>
+                  Send Message
+                </button>
               </form>
             </div>
           </div>
         </div>
         <div className='flex justify-center py-12'>
-            <Link href='/'>
-            <div className='rounded-full shadow-xl shadow-gray-900 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <HiOutlineChevronDoubleUp className='text-[#cfbaec]' size={30} />
-                </div>
-            </Link>
+          <div className='rounded-full shadow-xl shadow-gray-900 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+            <HiOutlineChevronDoubleUp className='text-[#cfbaec]' size={30} />
+          </div>
         </div>
       </div>
     </div>
